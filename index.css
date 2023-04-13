@@ -8,13 +8,32 @@ body{
     height: 100vh;
 }
 
-h1{
+.center-content{
+    
+}
+
+.container{
     color: black;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    font-size: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: aqua;
+    color: pink;
 }
 
