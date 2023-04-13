@@ -18,10 +18,10 @@ button.addEventListener('click', () => {
     box.style.display = 'block';
   });
   
-  
+
   reset.addEventListener('click', () => {
     
-    reset.style.display = '';
+    button.style.display = '';
 
     const box = document.getElementById('#box');
     box.style.display = 'block';
