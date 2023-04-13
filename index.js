@@ -1,21 +1,36 @@
 const button = document.querySelector("#btn");
 const getNumber = Math.random();
+const reset  = document.querySelector("#reset");
 
-button.addEventListener("click", myFunction);
+// testing code commented out
+//button.addEventListener("click", myFunction);
+
+//function myFunction(){
+    //alert(getNumber)
+//}
 
 
 button.addEventListener('click', () => {
     
     button.style.display = 'none';
-  
-    
+
     const box = document.getElementById('#box');
     box.style.display = 'block';
   });
   
-function myFunction(){
-    alert(getNumber)
-}
+  
+  reset.addEventListener('click', () => {
+    
+    reset.style.display = '';
+
+    const box = document.getElementById('#box');
+    box.style.display = 'block';
+  });
+  
+
+
+
+
 
 
 

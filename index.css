@@ -28,6 +28,7 @@ button{
     border: 2px solid blue;
     cursor: pointer;
     transition-duration: 0.5s;
+    position: relative;
 }
 
 button:hover{
@@ -39,6 +40,20 @@ button:hover{
     height: 100px;
     width: 100px;
     background-color: salmon;
-    display: none;
+    visibility: hidden;
 }
 
+.box-2{
+    height: 100px;
+    width: 100px;
+    background-color: salmon;
+    visibility: visible;
+}
+
+
+.update-display{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+}
