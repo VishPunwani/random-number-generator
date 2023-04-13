@@ -54,6 +54,6 @@ button:hover{
 .update-display{
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 400px;
     justify-content: space-between;
 }
