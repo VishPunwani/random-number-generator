@@ -35,3 +35,10 @@ button:hover{
     color: pink;
 }
 
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: salmon;
+    display: none;
+}
+
