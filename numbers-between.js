@@ -1,13 +1,21 @@
+
 const button = document.querySelector("#btn");
-var getNumber = Math.random() * 1000;
-const reset  = document.querySelector("#reset");
+let min = document.querySelector("#min").value;
+let max = document.querySelector("#max").value;
 let output = document.querySelector('#output');
+const reset  = document.querySelector("#reset");
 
 
 
 
-button.addEventListener("click", (generate)=>{
-    output.innerHTML = Math.random() * 1000
+function randomNumber(min, max){
+   
+     return Math.floor(min + Math.random() * (max - min + 1)) ;
+}
+
+
+button.addEventListener("click", (randomNumber)=>{
+    output.innerHTML = document.write(randomNumber);
 })
 
 
