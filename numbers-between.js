@@ -1,21 +1,17 @@
 
 const button = document.querySelector("#btn");
-let min = document.querySelector("#min").value;
-let max = document.querySelector("#max").value;
+let min = parseInt(document.getElementById('#min')). valueOf;
+let max = parseInt(document.getElementById('#max')). valueOf;
 let output = document.querySelector('#output');
 const reset  = document.querySelector("#reset");
+const equation = Math.floor(Math.random()*(max-min+1))+min;
 
 
 
 
-function randomNumber(min, max){
-   
-     return Math.floor(min + Math.random() * (max - min + 1)) ;
-}
 
+button.addEventListener("click", ()=>{
 
-button.addEventListener("click", (randomNumber)=>{
-    output.innerHTML = document.write(randomNumber);
 })
 
 

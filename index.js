@@ -7,7 +7,7 @@ let output = document.querySelector('#output');
 
 
 button.addEventListener("click", (generate)=>{
-    output.innerHTML = Math.random() * 1000
+    output.innerHTML = Math.random() * 10000000000
 })
 
 
