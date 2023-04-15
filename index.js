@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
   });
   
   reset.addEventListener('click', () => {
-    output.innerHTML = '';
+    output.innerHTML = 'Output';
   })
   
 

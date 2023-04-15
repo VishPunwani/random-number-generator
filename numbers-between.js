@@ -2,20 +2,18 @@
 const button = document.querySelector("#btn");
 let output = document.querySelector('#output');
 const reset  = document.querySelector("#reset");
-const equation = Math.floor(Math.random()* 100)
+const equation =  (min, max) => Math.floor(Math.random() * (max - min)) + min;
+let min = document.querySelector('#min').value;
+let max = document.querySelector('#max').value;
 
 
 
-function getValue(){
-  var x = document.getElementById('#min')
-  //var y = document.getElementById('#max')
-  document.getElementById("#output").innerHTML = x;
 
-}
+button.addEventListener("click", function(){
+  let min = document.querySelector('#min').value;
+  let max = document.querySelector('#max').value;
 
-
-button.addEventListener("click", (getValue)=>{
-output.innerHTML = getValue;
+  output.innerHTML =  (min, max) => Math.floor(Math.random() * (max - min)) + min;;
 })
 
 
@@ -33,7 +31,7 @@ button.addEventListener('click', () => {
   });
   
   reset.addEventListener('click', () => {
-    output.innerHTML = '';
+    output.innerHTML = 'Output';
   })
   
 
